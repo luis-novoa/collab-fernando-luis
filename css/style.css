@@ -1,9 +1,19 @@
 #nav-bar {
     position: fixed;
+    margin-left: 2.5em;
 }
 
 @media only screen and (max-width: 600px) {
     body {
         background: lightblue;
     }
+}
+
+#header-img {
+    width: 200px;
+    height: auto;
+}
+
+#intro {
+    padding-top: 5em;
 }
