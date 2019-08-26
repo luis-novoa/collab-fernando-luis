@@ -4,9 +4,12 @@
 }
 #nav-bar {
     position: fixed;
-    margin-left: 2.5em;
+    padding-left: 2.5em;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
 }
 
+/* 3 columns and 5 lines */
 
 @media only screen and (max-width: 600px) {
     body {
@@ -21,4 +24,20 @@
 
 #intro {
     padding-top: 5em;
+}
+
+#features {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+#front {
+    grid-row: 1 / span 3;
+    grid-column: 3 / 3;
+    width: 10em;
+}
+
+.resize {
+    width: 30%;
 }
