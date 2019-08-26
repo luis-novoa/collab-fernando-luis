@@ -7,10 +7,10 @@
   </head>
 
   <body>
-    <header id = "header">
+    <header id="header">
       <nav id="nav-bar">
-        <div class="nav-link">
-          <img id = "header-img" src="./images/logo.png">
+                <div class="nav-link">
+          <img id ="header-img" src="./images/logo.png">
           <a href="#intro">Intro</a>
           <a href="#features">Features</a>
           <a href="#contact">Contact</a>
@@ -18,19 +18,36 @@
       </nav>
     </header>
 
-    <div id = "intro">
+    <div id = "intro" class="introtext">
       <h1>A device to improve your workflow</h1>
-      <p></p>
+      <p></p>Partners in crime makes pair programming really about coding, making venial tasks, 
+        such as using a CVS or swtiching between roles, as simple as pushing a button.</p>
+      <video src="./video/video.mp4" width="320" height="240" controls><video></video>
+
     </div>
 
     <div id="features">
-      <video src="./video/video.mp4" width="320" height="240" controls><video></video>
+    <img src="./images/gitbutton.png">
+    <h2>Git Button</h2>
+    <p>While being the driver, it will push the changes, while being the navigator, it will pull.</p>
+    <img src="./images/switchbutton.png">
+    <h2>Switch Button</h2>
+    <p>Push at any time to switch between sharing your screen and watching your partner</p>
+    <img src="./images/macrosbutton.png">
+    <h2>Macros Programable Button</h2>
+    <p>Easy to program any function via Macros. The script will be saved on the device.</p>
     </div>
     <div id="contact">
       <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <h2>Get the latest news!</h2>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="name">
+        <br><br>
         <label for="email">Email address</label>
         <br>
         <input type="email" id="email" name="email" placeholder="john.smith@yourmail.com" oninvalid="alert('Invalid email.')">
+        <br><br>
         <input type="submit" id="submit">
       </form>
     </div>
